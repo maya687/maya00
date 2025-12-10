@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.button-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-area {
+  flex: 1;
+  border: 1px solid #aaa;
+  padding: 20px;
+  min-height: 300px;
+}
