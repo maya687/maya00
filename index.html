@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ラケットゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>ラケットゲーム</h1>
+        
+        <div id="ui-panel">
+            <p>【遊び方】左右の矢印キーでラケットを動かしてボールを打ち返そう！</p>
+            <p>10回ミス（NG）するとゲームオーバーです。</p>
+            
+            <div class="controls">
+                <label for="speed-select">速度：</label>
+                <select id="speed-select">
+                    <option value="4">遅い</option>
+                    <option value="7" selected>並み</option>
+                    <option value="12">速い</option>
+                </select>
+                <button id="start-btn">スタート / 再挑戦</button>
+            </div>
+            
+            <div class="score-board">
+                NG回数: <span id="ng-count">0</span> / 10
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="480" height="320"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
